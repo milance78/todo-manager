@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO MANAGER</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <span>TODO MANAGER</span>
+    </nav>
+    <div class="container">
+        <main>
+            <section class="display-statistics">
+                <div class="display-number-container">
+                    <div class="red-ring circular-progress">
+                        <div class="inner-circle uncompleted-number-display">0</div>
+                    </div>
+                    <p>uncompleted</p>
+                </div>
+                <div class="display-number-container">
+                    <div class="yellow-ring circular-progress">
+                        <div class="inner-circle inprogress-number-display">0</div>
+                    </div>
+                    <p>in progress</p>
+                </div>
+                <div class="display-number-container">
+                    <div class="green-ring circular-progress">
+                        <div class="inner-circle completed-number-display">0</div>
+                    </div>
+                    <p>completed</p>
+                </div>
+            </section>
+            <section class="uncompleted-tasks-list"></section>
+        </main>
+        <aside>
+            <div class="aside-top"></div>
+            <div class="aside-bottom">
+                <div class="completed-list-header">
+                    <p class="completed-title-header">completed title</p>
+                    <p class="completed-date-header">date</p>
+                    <p class="completed-time-header">duration</p>
+                </div>
+                <div class="hr"></div>
+                <div class="completed-list-body"></div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="src/timer.ts"></script>
+    <script src="src/taskObject.ts"></script>
+    <script src="src/index.ts"></script>
+    <script src="src/displayFunctions.ts"></script>  
+    <script src="src/circularProgress.ts"></script>
+    
+</body>
+
+</html>
+
+
+
